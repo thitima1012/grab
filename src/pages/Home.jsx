@@ -8,7 +8,7 @@ export default function Home() {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredReastaurants] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/restaurants")
+    fetch("http://localhost:3000/restaurants")
       .then((res) => {
         return res.json();
       })
